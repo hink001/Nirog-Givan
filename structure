@@ -1,0 +1,8 @@
+project/
+│
+├── app.py              # Flask backend
+├── templates/
+│   └── index.html      # Your HTML file
+├── static/
+│   ├── style.css       # CSS file
+│   └── nirog.js        # JavaScript file

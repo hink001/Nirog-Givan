@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+}
+main {
+    padding: 20px;
+}
+button {
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+input[type=\"text\"], input[type=\"file\"] {
+    padding: 8px;
+    margin-top: 10px;
+    width: 60%;
+}
+#result, #response {
+    margin-top: 20px;
+    font-weight: bold;
+}

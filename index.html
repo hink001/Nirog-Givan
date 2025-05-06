@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nirog Givan - AI Health Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Nirog Givan</h1>
+        <p>AI-powered natural health solutions</p>
+    </header>
+    <main>
+        <section id="scanner">
+            <h2>Scan Medicine or Skin Mark</h2>
+            <input type="file" id="imageUpload" accept="image/*">
+            <button onclick="scanImage()">Analyze</button>
+            <div id="result"></div>
+        </section>
+        <section id="chatbot">
+            <h2>Ask Health Questions</h2>
+            <input type="text" id="userQuery" placeholder="Type your question...">
+            <button onclick="askAI()">Ask AI</button>
+            <div id="response"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Flask backend (app.py) -->
+<!--
+from flask import Flask, render_template, request, jsonify
+from PIL import Image
+import pytesseract
+import io
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return render_template("nerog.html")
+
+@app.route("/scan-image", methods=["POST"])
+def scan_image():
+    file = request.files['image']
+    img = Image.open(io.BytesIO(file.read()))
+    text = pytesseract.image_to_string(img)
+    return jsonify({"text": text})
+
+@app.route("/ask-ai")
+def ask_ai():
+    question = request.args.get("question")
+    return jsonify({"answer": f"Suggested advice for: {question}"})
+
+if __name__ == "__main__":
+    app.run(debug=True)
+-->
