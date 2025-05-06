@@ -42,3 +42,4 @@ async function askAI() {
         console.error(error);
     }
 }
+
