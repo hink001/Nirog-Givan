@@ -44,6 +44,7 @@ async function askAI() {
                 'X-Api-Key': 'fPHhyAPLse6lneEvmUMeXg==q9GDDoUjVFjswKdk'
             }
         });
+
         const data = await res.json();
         responseDiv.innerHTML = `AI: ${data.response}`;
     } catch (error) {
