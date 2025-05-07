@@ -52,4 +52,4 @@ async function askAI() {
         console.error(error);
     }
 }
-
+add api in this js code
